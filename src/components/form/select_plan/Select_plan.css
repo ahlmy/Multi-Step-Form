@@ -1,0 +1,120 @@
+.selectPlan {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.selectPlan--title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.selectPlan--form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.selectPlan--form__item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  border: solid 1px var(--pastel-blue);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.selectPlan--form__item img {
+  width: 40px;
+  aspect-ratio: 1;
+  margin-bottom: 3rem;
+}
+
+.selectPlan--form__item p {
+  color: var(--cool-gray);
+}
+
+.selectPlan--form__item__info {
+  font-size: 0.75rem;
+  color: red;
+}
+
+.selectPlan--selection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.selectPlan--selection > div {
+  display: flex;
+  gap: 1rem;
+}
+
+#selection {
+  background-color: var(--marine-blue);
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+#selection__circle {
+  width: 14px;
+  aspect-ratio: 1;
+  position: absolute;
+  background-color: white;
+  top: 3px;
+  z-index: 1;
+  border-radius: 50%;
+  transition: transform 0.2s ease 0s;
+}
+
+.left {
+  transform: translateX(3px);
+}
+
+.right {
+  transform: translateX(23px);
+}
+
+@media screen and (max-width: 800px) {
+  .selectPlan--form {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .selectPlan--form__item {
+    display: grid;
+    grid-template-columns: repeat(2, fit-content);
+    column-gap: 1rem;
+    justify-items: start;
+    align-items: center;
+  }
+  .selectPlan--form__item img {
+    margin: 0;
+  }
+
+  .selectPlan--form__item h4 {
+    align-self: start;
+    grid-column: 2/ 3;
+    grid-row: 1;
+  }
+
+  .selectPlan--form__item p {
+    padding-top: 1rem;
+    grid-column: 2/ 3;
+    grid-row: 1;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  .selectPlan--selection > div {
+    padding-bottom: 1rem;
+  }
+}

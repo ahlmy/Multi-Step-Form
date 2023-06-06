@@ -1,0 +1,46 @@
+.formNav {
+  flex: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.formNav--next {
+  color: var(--white);
+  background-color: var(--marine-blue);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease 0s;
+}
+
+.formNav--next:hover {
+  background-color: var(--purplish-blue);
+}
+
+.formNav--back {
+  color: var(--cool-gray);
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: color 0.2s ease 0s;
+}
+
+.formNav--back:hover {
+  color: var(--marine-blue);
+}
+
+@media screen and (max-width: 800px) {
+  .formNav {
+    width: 100%;
+    padding: 0 5%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: var(--white);
+  }
+}

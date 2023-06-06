@@ -1,0 +1,51 @@
+.personalPlan {
+  flex: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.personalPlan--title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.personalPlan--form {
+  display: flex;
+  flex-direction: column;
+}
+
+.personalPlan--form label {
+  line-height: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.personalPlan--form input {
+  height: 2.5rem;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  outline: solid 0.5px rgba(0, 0, 0, 0.2);
+  padding: 0rem 0.5rem;
+  font-size: 1.1rem;
+}
+
+.personalPlan--form input:focus {
+  outline: solid 1px var(--purplish-blue);
+}
+
+@media screen and (max-width: 800px) {
+  .personalPlan--form {
+    font-size: 0.9rem;
+  }
+  .personalPlan--form input {
+    font-size: 1rem;
+  }
+  .personalPlan--form label {
+    line-height: 1.5rem;
+  }
+}

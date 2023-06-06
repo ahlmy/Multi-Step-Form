@@ -1,0 +1,29 @@
+.thanksPage {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.thanksPage p {
+  line-height: 1.5rem;
+  color: var(--cool-gray);
+}
+
+.thanksPage img {
+  transition: scale 0.4s ease 0s;
+}
+
+.thanksPage img:hover {
+  scale: 1.1;
+}
+
+@media screen and (max-width: 800px) {
+  .thanksPage {
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+}
